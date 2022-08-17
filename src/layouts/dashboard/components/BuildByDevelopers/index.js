@@ -25,27 +25,36 @@ import SoftTypography from "components/SoftTypography";
 // Images
 import wavesWhite from "assets/images/shapes/waves-white.svg";
 import rocketWhite from "assets/images/illustrations/rocket-white.png";
+import team1 from "assets/images/team-1.jpg";
 
 function BuildByDevelopers() {
   return (
     <Card>
       <SoftBox p={2}>
         <Grid container spacing={3}>
+          {/* Overview Text */}
           <Grid item xs={12} lg={6}>
             <SoftBox display="flex" flexDirection="column" height="100%">
               <SoftBox pt={1} mb={0.5}>
+                {/* Overview Title */}
                 <SoftTypography variant="body2" color="text" fontWeight="medium">
                   Project Overview
                 </SoftTypography>
               </SoftBox>
+              {/* Overview Subtitle */}
               <SoftTypography variant="h5" fontWeight="bold" gutterBottom>
-                Soft UI Dashboard
+                대산 롯데케미칼 ES PROJECT
               </SoftTypography>
               <SoftBox mb={6}>
+                {/* Overview 본문 */}
                 <SoftTypography variant="body2" color="text">
-                  프로젝트 개요: ES Project
+                  <div>&nbsp;</div>
+                  <div>공 &nbsp; 기: &nbsp;&nbsp;2022/03/25 ~ 2024/03/31</div>
+                  <div>공사비: &nbsp;&nbsp;4,200억원</div>
+                  <div>생산품: &nbsp;&nbsp;EC,DMC,EMC,DEC</div>
                 </SoftTypography>
               </SoftBox>
+              {/* read more & 화살표*/}
               <SoftTypography
                 component="a"
                 href="#"
@@ -75,6 +84,7 @@ function BuildByDevelopers() {
               </SoftTypography>
             </SoftBox>
           </Grid>
+          {/* Overview Image */}
           <Grid item xs={12} lg={5} sx={{ position: "relative", ml: "auto" }}>
             <SoftBox
               height="100%"
@@ -85,17 +95,19 @@ function BuildByDevelopers() {
               borderRadius="lg"
               variant="gradient"
             >
+              {/* 배경 Image */}
               <SoftBox
                 component="img"
-                src={wavesWhite}
+                src={team1}
                 alt="waves"
                 display="block"
                 position="absolute"
                 left={0}
-                width="100%"
+                width="50%"
                 height="100%"
               />
-              <SoftBox component="img" src={rocketWhite} alt="rocket" width="100%" pt={3} />
+              {/* 전경 Image */}
+              <SoftBox component="img" src={wavesWhite} alt="rocket" width="100%" pt={3} />
             </SoftBox>
           </Grid>
         </Grid>
