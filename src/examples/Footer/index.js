@@ -72,7 +72,6 @@ function Footer({ company, links }) {
             &nbsp;{name}&nbsp;
           </SoftTypography>
         </Link>
-        for a better web.
       </SoftBox>
       <SoftBox
         component="ul"
@@ -99,12 +98,10 @@ function Footer({ company, links }) {
 
 // Setting default values for the props of Footer
 Footer.defaultProps = {
-  company: { href: "https://www.creative-tim.com/", name: "Creative Tim" },
+  company: { href: "https://www.lottecon.co.kr/", name: "Lotte E&C" },
   links: [
-    { href: "https://www.creative-tim.com/", name: "Creative Tim" },
-    { href: "https://www.creative-tim.com/presentation", name: "About Us" },
-    { href: "https://www.creative-tim.com/blog", name: "Blog" },
-    { href: "https://www.creative-tim.com/license", name: "License" },
+    { href: "https://www.lottecon.co.kr/", name: "Lotte E&C" },
+    { href: "https://www.lottecon.co.kr/about_us/", name: "About Us" },
   ],
 };
 

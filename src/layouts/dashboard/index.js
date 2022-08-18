@@ -33,8 +33,8 @@ import GradientLineChart from "examples/Charts/LineCharts/GradientLineChart";
 import typography from "assets/theme/base/typography";
 
 // Dashboard layout components
-import BuildByDevelopers from "layouts/dashboard/components/BuildByDevelopers";
-import WorkWithTheRockets from "layouts/dashboard/components/WorkWithTheRockets";
+import BuildByDevelopers from "layouts/dashboard/components/ProjectOverview";
+import WorkWithTheRockets from "layouts/dashboard/components/WorkStatus";
 import Projects from "layouts/dashboard/components/Projects";
 import OrderOverview from "layouts/dashboard/components/OrderOverview";
 
@@ -93,7 +93,7 @@ function Dashboard() {
           <Grid container spacing={3}>
             <Grid item xs={12} lg={7}>
               {/* 프로젝트 개요 자리 */}
-              <BuildByDevelopers /> 
+              <BuildByDevelopers />
             </Grid>
             <Grid item xs={12} lg={5}>
               {/* 더보기 자리 */}

@@ -25,11 +25,11 @@ import SoftBox from "components/SoftBox";
 import SoftTypography from "components/SoftTypography";
 
 // Custom styles for the SidenavCard
-import { card, cardContent, cardIconBox, cardIcon } from "examples/Sidenav/styles/sidenavCard";
+import { card, cardContent, cardIconBox, cardIcon } from "examples/CCTV/styles/sidenavCard";
 
 // Soft UI Dashboard React context
 import { useSoftUIController } from "context";
-
+// CCTV 링크 설정
 function SidenavCard() {
   const [controller] = useSoftUIController();
   const { miniSidenav, sidenavColor } = controller;
@@ -47,28 +47,28 @@ function SidenavCard() {
           sx={cardIconBox}
         >
           <Icon fontSize="medium" sx={(theme) => cardIcon(theme, { sidenavColor })}>
-            star
+            videocamerabackoutlined
           </Icon>
         </SoftBox>
         <SoftBox lineHeight={1}>
           <SoftTypography variant="h6" color="white">
-            Need help?
+            현장 CCTV 확인?
           </SoftTypography>
           <SoftBox mb={1.825} mt={-1}>
             <SoftTypography variant="caption" color="white" fontWeight="medium">
-              Please check our docs
+              아래 링크로 이동해주세요.
             </SoftTypography>
           </SoftBox>
           <SoftButton
             component={Link}
-            href="https://www.creative-tim.com/learning-lab/react/quick-start/soft-ui-dashboard/"
+            href="http://www.roadplus.co.kr/main/main.do#none"
             target="_blank"
             rel="noreferrer"
             size="small"
             color="white"
             fullWidth
           >
-            documentation
+            CCTV 바로가기
           </SoftButton>
         </SoftBox>
       </CardContent>

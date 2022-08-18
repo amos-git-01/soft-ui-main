@@ -15,6 +15,7 @@ Coded by www.creative-tim.com
 
 // @mui material components
 import Card from "@mui/material/Card";
+import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";
 
 // Soft UI Dashboard React components
@@ -22,7 +23,7 @@ import SoftBox from "components/SoftBox";
 import SoftTypography from "components/SoftTypography";
 
 // Images
-import ivancik from "assets/images/ivancik.jpg";
+import plant1 from "assets/images/plant/plant1.jpg";
 
 function WorkWithTheRockets() {
   return (
@@ -40,27 +41,46 @@ function WorkWithTheRockets() {
               `${linearGradient(
                 rgba(gradients.dark.main, 0.8),
                 rgba(gradients.dark.state, 0.8)
-              )}, url(${ivancik})`,
+              )}, url(${plant1})`,
             backgroundSize: "cover",
           }}
         >
+          {/* 주요 작업 Title */}
           <SoftBox mb={3} pt={1}>
             <SoftTypography variant="h5" color="white" fontWeight="bold">
-              العمل مع الصواريخ
+              현장 주요 작업 현황
             </SoftTypography>
           </SoftBox>
+          {/* 주요 작업 내용 */}
           <SoftBox mb={2}>
-            <SoftTypography variant="body2" color="white" fontWeight="bold">
-              تكوين الثروة هو لعبة تطوري حديثة ذات حصيلة إيجابية. الأمر كله يتعلق بمن يغتنم الفرصة
-              أولاً هذه بطاقة بسيطة.
+            <SoftTypography variant="body2" color="white">
+              <Grid container spacing={0}>
+                {/* 작업현황 */}
+                <Grid item xs={12} lg={6}>
+                  <div>
+                    <b>공종별 주요작업 현황</b>
+                  </div>
+                  <div>토목: 반응기 기초 타설</div>
+                  <div>배관: 반응기 기초 타설</div>
+                </Grid>
+                {/* 검측현황 */}
+                <Grid item xs={12} lg={6}>
+                  <div>
+                    <b>Field Inspection Notice</b>
+                  </div>
+                  <div>토목: 반응기 기초 타설</div>
+                  <div>배관: 반응기 기초 타설</div>
+                </Grid>
+              </Grid>
             </SoftTypography>
           </SoftBox>
+          {/* 작업일보 바로가기 */}
           <SoftTypography
             component="a"
             href="#"
             variant="button"
             color="white"
-            fontWeight="bold"
+            fontWeight="medium"
             sx={{
               mt: "auto",
               mr: "auto",
@@ -79,8 +99,8 @@ function WorkWithTheRockets() {
               },
             }}
           >
-            اقرأ المستندات
-            <Icon sx={{ fontWeight: "bold" }}>arrow_backward</Icon>
+            작업일보 바로가기
+            <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
           </SoftTypography>
         </SoftBox>
       </SoftBox>

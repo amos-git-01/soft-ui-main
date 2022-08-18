@@ -25,13 +25,13 @@ import SoftTypography from "components/SoftTypography";
 // Images
 import wavesWhite from "assets/images/shapes/waves-white.svg";
 import rocketWhite from "assets/images/illustrations/rocket-white.png";
-import team1 from "assets/images/team-1.jpg";
+import plant2 from "assets/images/plant/plant2.jpg";
 
 function BuildByDevelopers() {
   return (
     <Card>
       <SoftBox p={2}>
-        <Grid container spacing={3}>
+        <Grid container spacing={2}>
           {/* Overview Text */}
           <Grid item xs={12} lg={6}>
             <SoftBox display="flex" flexDirection="column" height="100%">
@@ -79,35 +79,25 @@ function BuildByDevelopers() {
                   },
                 }}
               >
-                Read More
+                상세개요 바로가기
                 <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
               </SoftTypography>
             </SoftBox>
           </Grid>
           {/* Overview Image */}
           <Grid item xs={12} lg={5} sx={{ position: "relative", ml: "auto" }}>
-            <SoftBox
-              height="100%"
-              display="grid"
-              justifyContent="center"
-              alignItems="center"
-              bgColor="info"
-              borderRadius="lg"
-              variant="gradient"
-            >
-              {/* 배경 Image */}
+            {/* 배경 Image */}
+
+            <SoftBox>
               <SoftBox
+                left={3}
                 component="img"
-                src={team1}
-                alt="waves"
-                display="block"
+                src={plant2}
                 position="absolute"
-                left={0}
-                width="50%"
-                height="100%"
-              />
-              {/* 전경 Image */}
-              <SoftBox component="img" src={wavesWhite} alt="rocket" width="100%" pt={3} />
+                borderRadius="lg"
+                width="100%"
+                height="95%"
+              ></SoftBox>
             </SoftBox>
           </Grid>
         </Grid>

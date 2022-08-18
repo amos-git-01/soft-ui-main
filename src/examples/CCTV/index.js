@@ -33,12 +33,12 @@ import SoftTypography from "components/SoftTypography";
 import SoftButton from "components/SoftButton";
 
 // Soft UI Dashboard React examples
-import SidenavCollapse from "examples/Sidenav/SidenavCollapse";
-import SidenavCard from "examples/Sidenav/SidenavCard";
+import SidenavCollapse from "examples/CCTV/SidenavCollapse";
+import SidenavCard from "examples/CCTV/SidenavCard";
 
 // Custom styles for the Sidenav
-import SidenavRoot from "examples/Sidenav/SidenavRoot";
-import sidenavLogoLabel from "examples/Sidenav/styles/sidenav";
+import SidenavRoot from "examples/CCTV/SidenavRoot";
+import sidenavLogoLabel from "examples/CCTV/styles/sidenav";
 
 // Soft UI Dashboard React context
 import { useSoftUIController, setMiniSidenav } from "context";
@@ -169,7 +169,7 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
             color={color}
             fullWidth
           >
-            upgrade to pro
+            LPCS로 이동하기
           </SoftButton>
         </SoftBox>
       </SoftBox>
