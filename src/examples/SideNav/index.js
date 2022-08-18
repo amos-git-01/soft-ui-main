@@ -33,12 +33,12 @@ import SoftTypography from "components/SoftTypography";
 import SoftButton from "components/SoftButton";
 
 // Soft UI Dashboard React examples
-import SidenavCollapse from "examples/CCTV/SidenavCollapse";
-import SidenavCard from "examples/CCTV/SidenavCard";
+import SidenavCollapse from "examples/SideNav/SidenavCollapse";
+import SidenavCard from "examples/SideNav/CCTV";
 
 // Custom styles for the Sidenav
-import SidenavRoot from "examples/CCTV/SidenavRoot";
-import sidenavLogoLabel from "examples/CCTV/styles/sidenav";
+import SidenavRoot from "examples/SideNav/SidenavRoot";
+import sidenavLogoLabel from "examples/SideNav/styles/sidenav";
 
 // Soft UI Dashboard React context
 import { useSoftUIController, setMiniSidenav } from "context";
@@ -162,7 +162,7 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
         <SoftBox mt={2}>
           <SoftButton
             component="a"
-            href="https://creative-tim.com/product/soft-ui-dashboard-pro-react"
+            href="https://lpcs.lottenc.com"
             target="_blank"
             rel="noreferrer"
             variant="gradient"

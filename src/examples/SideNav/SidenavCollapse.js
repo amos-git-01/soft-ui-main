@@ -32,7 +32,7 @@ import {
   collapseIconBox,
   collapseIcon,
   collapseText,
-} from "examples/CCTV/styles/sidenavCollapse";
+} from "examples/SideNav/styles/sidenavCollapse";
 
 // Soft UI Dashboard React context
 import { useSoftUIController } from "context";

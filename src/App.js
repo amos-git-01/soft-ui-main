@@ -27,7 +27,7 @@ import Icon from "@mui/material/Icon";
 import SoftBox from "components/SoftBox";
 
 // Soft UI Dashboard React examples
-import Sidenav from "examples/CCTV";
+import Sidenav from "examples/SideNav";
 import Configurator from "examples/Configurator";
 
 // Soft UI Dashboard React themes
