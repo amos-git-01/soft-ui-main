@@ -35,8 +35,8 @@ import typography from "assets/theme/base/typography";
 // Dashboard layout components
 import BuildByDevelopers from "layouts/dashboard/components/ProjectOverview";
 import WorkWithTheRockets from "layouts/dashboard/components/WorkStatus";
-import Projects from "layouts/dashboard/components/Projects";
-import OrderOverview from "layouts/dashboard/components/OrderOverview";
+import Projects from "layouts/dashboard/components/ProcurementStatus";
+import ProjectOverview from "layouts/dashboard/components/ProjectMilestone";
 
 // Data
 import reportsBarChartData from "layouts/dashboard/data/reportsBarChartData";
@@ -50,45 +50,47 @@ function Dashboard() {
     <DashboardLayout>
       <DashboardNavbar />
       <SoftBox py={3}>
+        {/* 첫번째 줄 */}
         <SoftBox mb={3}>
           <Grid container spacing={3}>
             <Grid item xs={12} sm={6} xl={3}>
               <MiniStatisticsCard
-                title={{ text: "today's money" }}
-                count="$53,000"
-                percentage={{ color: "success", text: "+55%" }}
-                icon={{ color: "info", component: "paid" }}
+                title={{ text: "계획공정률" }}
+                count="15%"
+                percentage={{ color: "success", text: "+1%" }}
+                icon={{ color: "info", component: "timeline" }}
               />
             </Grid>
             <Grid item xs={12} sm={6} xl={3}>
               <MiniStatisticsCard
-                title={{ text: "today's users" }}
-                count="2,300"
+                title={{ text: "실행공정률" }}
+                count="16%"
                 percentage={{ color: "success", text: "+3%" }}
-                icon={{ color: "info", component: "public" }}
+                icon={{ color: "info", component: "insights" }}
               />
             </Grid>
             <Grid item xs={12} sm={6} xl={3}>
               <MiniStatisticsCard
-                title={{ text: "new clients" }}
-                count="+3,462"
-                percentage={{ color: "error", text: "-2%" }}
-                icon={{ color: "info", component: "emoji_events" }}
+                title={{ text: "무해재달성일수" }}
+                count="120일"
+                percentage={{ color: "error", text: "" }}
+                icon={{ color: "info", component: "event" }}
               />
             </Grid>
             <Grid item xs={12} sm={6} xl={3}>
               <MiniStatisticsCard
-                title={{ text: "sales" }}
-                count="$103,430"
-                percentage={{ color: "success", text: "+5%" }}
+                title={{ text: "검측완료현황" }}
+                count="270"
+                percentage={{ color: "success", text: "+11" }}
                 icon={{
                   color: "info",
-                  component: "shopping_cart",
+                  component: "task",
                 }}
               />
             </Grid>
           </Grid>
         </SoftBox>
+        {/* 두번째 줄 */}
         <SoftBox mb={3}>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={7}>
@@ -101,11 +103,13 @@ function Dashboard() {
             </Grid>
           </Grid>
         </SoftBox>
+        {/* 세번째 줄 */}
         <SoftBox mb={3}>
           <Grid container spacing={3}>
+            {/* 출역인원 관리 */}
             <Grid item xs={12} lg={5}>
               <ReportsBarChart
-                title="active users"
+                title="출역인원 관리"
                 description={
                   <>
                     (<strong>+23%</strong>) than last week
@@ -116,6 +120,7 @@ function Dashboard() {
               />
             </Grid>
             <Grid item xs={12} lg={7}>
+              {/* 공정률 추세선 확인 */}
               <GradientLineChart
                 title="Progress Overview"
                 description={
@@ -137,12 +142,13 @@ function Dashboard() {
             </Grid>
           </Grid>
         </SoftBox>
+        {/* 네번째 줄 */}
         <Grid container spacing={3}>
           <Grid item xs={12} md={6} lg={8}>
             <Projects />
           </Grid>
           <Grid item xs={12} md={6} lg={4}>
-            <OrderOverview />
+            <ProjectOverview />
           </Grid>
         </Grid>
       </SoftBox>

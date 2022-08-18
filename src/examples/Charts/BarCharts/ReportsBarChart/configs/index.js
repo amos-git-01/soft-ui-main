@@ -73,7 +73,7 @@ function configs(labels, datasets) {
             drawTicks: false,
           },
           ticks: {
-            display: false,
+            display: true,
           },
         },
       },

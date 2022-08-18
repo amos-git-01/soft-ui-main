@@ -47,7 +47,7 @@ export default function data() {
 
   return {
     columns: [
-      { name: "companies", align: "left" },
+      { name: "Purchase_Order", align: "left" },
       { name: "members", align: "left" },
       { name: "budget", align: "center" },
       { name: "completion", align: "center" },
@@ -55,7 +55,7 @@ export default function data() {
 
     rows: [
       {
-        companies: [logoXD, "Soft UI XD Version"],
+        Purchase_Order: [logoXD, "Reactor 1"],
         members: (
           <SoftBox display="flex" py={1}>
             {avatars([
@@ -68,7 +68,7 @@ export default function data() {
         ),
         budget: (
           <SoftTypography variant="caption" color="text" fontWeight="medium">
-            $14,000
+            $80,000,000
           </SoftTypography>
         ),
         completion: (
@@ -78,7 +78,7 @@ export default function data() {
         ),
       },
       {
-        companies: [logoAtlassian, "Add Progress Track"],
+        Purchase_Order: [logoAtlassian, "Gas Turbine"],
         members: (
           <SoftBox display="flex" py={1}>
             {avatars([
@@ -89,7 +89,7 @@ export default function data() {
         ),
         budget: (
           <SoftTypography variant="caption" color="text" fontWeight="medium">
-            $3,000
+            $10,000,000
           </SoftTypography>
         ),
         completion: (
@@ -99,7 +99,7 @@ export default function data() {
         ),
       },
       {
-        companies: [logoSlack, "Fix Platform Errors"],
+        Purchase_Order: [logoSlack, "DCS"],
         members: (
           <SoftBox display="flex" py={1}>
             {avatars([
@@ -110,7 +110,7 @@ export default function data() {
         ),
         budget: (
           <SoftTypography variant="caption" color="text" fontWeight="medium">
-            Not set
+            $50,000,000
           </SoftTypography>
         ),
         completion: (
@@ -120,7 +120,7 @@ export default function data() {
         ),
       },
       {
-        companies: [logoSpotify, "Launch our Mobile App"],
+        Purchase_Order: [logoSpotify, "Gas Compressor"],
         members: (
           <SoftBox display="flex" py={1}>
             {avatars([
@@ -133,7 +133,7 @@ export default function data() {
         ),
         budget: (
           <SoftTypography variant="caption" color="text" fontWeight="medium">
-            $20,500
+            $60,000,000
           </SoftTypography>
         ),
         completion: (
@@ -143,7 +143,7 @@ export default function data() {
         ),
       },
       {
-        companies: [logoJira, "Add the New Pricing Page"],
+        Purchase_Order: [logoJira, "LV/MV Switch Gear / MCC"],
         members: (
           <SoftBox display="flex" py={1}>
             {avatars([[team4, "Jessica Doe"]])}
@@ -151,7 +151,7 @@ export default function data() {
         ),
         budget: (
           <SoftTypography variant="caption" color="text" fontWeight="medium">
-            $500
+            $20,000,000
           </SoftTypography>
         ),
         completion: (
@@ -161,7 +161,7 @@ export default function data() {
         ),
       },
       {
-        companies: [logoInvesion, "Redesign New Online Shop"],
+        Purchase_Order: [logoInvesion, "Ball Tank"],
         members: (
           <SoftBox display="flex" py={1}>
             {avatars([
@@ -172,7 +172,7 @@ export default function data() {
         ),
         budget: (
           <SoftTypography variant="caption" color="text" fontWeight="medium">
-            $2,000
+            $10,000,000
           </SoftTypography>
         ),
         completion: (

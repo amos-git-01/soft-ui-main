@@ -29,7 +29,7 @@ import SoftTypography from "components/SoftTypography";
 import Table from "examples/Tables/Table";
 
 // Data
-import data from "layouts/dashboard/components/Projects/data";
+import data from "layouts/dashboard/components/ProcurementStatus/data";
 
 function Projects() {
   const { columns, rows } = data();
@@ -64,7 +64,7 @@ function Projects() {
       <SoftBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
         <SoftBox>
           <SoftTypography variant="h6" gutterBottom>
-            Projects
+            주요 기자재 조달 현황
           </SoftTypography>
           <SoftBox display="flex" alignItems="center" lineHeight={0}>
             <Icon

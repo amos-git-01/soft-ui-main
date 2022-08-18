@@ -23,13 +23,26 @@ import SoftBox from "components/SoftBox";
 import SoftTypography from "components/SoftTypography";
 
 // Images
-import wavesWhite from "assets/images/shapes/waves-white.svg";
-import rocketWhite from "assets/images/illustrations/rocket-white.png";
+import plant1 from "assets/images/plant/plant1.jpg";
 import plant2 from "assets/images/plant/plant2.jpg";
+
+// Image Sliders
+import SimpleImageSlider from "react-simple-image-slider";
+const IMAGES = [
+  { url: plant1 },
+  { url: plant2 },
+  { url: plant1 },
+  { url: plant2 },
+  { url: plant1 },
+  { url: plant2 },
+];
+
+// 본문 시작
 
 function BuildByDevelopers() {
   return (
     <Card>
+      <div></div>
       <SoftBox p={2}>
         <Grid container spacing={2}>
           {/* Overview Text */}
@@ -38,7 +51,7 @@ function BuildByDevelopers() {
               <SoftBox pt={1} mb={0.5}>
                 {/* Overview Title */}
                 <SoftTypography variant="body2" color="text" fontWeight="medium">
-                  Project Overview
+                  Project 개요
                 </SoftTypography>
               </SoftBox>
               {/* Overview Subtitle */}
@@ -79,25 +92,35 @@ function BuildByDevelopers() {
                   },
                 }}
               >
-                상세개요 바로가기
+                상세 개요 바로가기
                 <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
               </SoftTypography>
             </SoftBox>
           </Grid>
           {/* Overview Image */}
-          <Grid item xs={12} lg={5} sx={{ position: "relative", ml: "auto" }}>
+          <Grid item xs={12} lg={6} sx={{ position: "relative", ml: "auto" }}>
             {/* 배경 Image */}
 
-            <SoftBox>
-              <SoftBox
-                left={3}
-                component="img"
-                src={plant2}
-                position="absolute"
-                borderRadius="lg"
+            <SoftBox borderRadius="lg">
+              <SimpleImageSlider
+                style={{
+                  position: "relative",
+                  border: "0px solid red",
+                  borderRadius: "10px",
+                  margin: "0 auto",
+                  marginTop: "0px",
+                }}
+                navStyle={1}
                 width="100%"
-                height="95%"
-              ></SoftBox>
+                height={240}
+                images={IMAGES}
+                showBullets={true}
+                showNavs={true}
+                onClick={onclick}
+                autoPlay={true}
+                autoPlayDelay={5}
+                navSize={50}
+              />
             </SoftBox>
           </Grid>
         </Grid>

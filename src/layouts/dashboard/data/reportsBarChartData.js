@@ -15,28 +15,28 @@ Coded by www.creative-tim.com
 
 const reportsBarChartData = {
   chart: {
-    labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-    datasets: { label: "Sales", data: [450, 200, 100, 220, 500, 100, 400, 230, 500] },
+    labels: ["Dec-11", "Dec-12", "Dec-13", "Dec-14", "Dec-15", "Dec-16"],
+    datasets: { label: "작업자", data: [900, 1000, 1100, 1220, 1150, 1300] },
   },
   items: [
     {
-      icon: { color: "primary", component: "library_books" },
-      label: "users",
-      progress: { content: "36K", percentage: 60 },
+      icon: { color: "primary", component: "manageaccounts" },
+      label: "롯데건설",
+      progress: { content: "50", percentage: 60 },
     },
     {
-      icon: { color: "info", component: "touch_app" },
-      label: "clicks",
-      progress: { content: "2M", percentage: 90 },
+      icon: { color: "info", component: "engineering" },
+      label: "관리자",
+      progress: { content: "150", percentage: 90 },
     },
     {
-      icon: { color: "warning", component: "payment" },
-      label: "sales",
-      progress: { content: "$435", percentage: 30 },
+      icon: { color: "warning", component: "group" },
+      label: "작업자",
+      progress: { content: "1200", percentage: 30 },
     },
     {
-      icon: { color: "error", component: "extension" },
-      label: "items",
+      icon: { color: "error", component: "agriculture" },
+      label: "주요장비",
       progress: { content: "43", percentage: 50 },
     },
   ],

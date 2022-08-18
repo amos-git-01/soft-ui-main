@@ -46,7 +46,7 @@ function WorkWithTheRockets() {
           }}
         >
           {/* 주요 작업 Title */}
-          <SoftBox mb={3} pt={1}>
+          <SoftBox mb={2} pt={1}>
             <SoftTypography variant="h5" color="white" fontWeight="bold">
               현장 주요 작업 현황
             </SoftTypography>
@@ -56,20 +56,24 @@ function WorkWithTheRockets() {
             <SoftTypography variant="body2" color="white">
               <Grid container spacing={0}>
                 {/* 작업현황 */}
-                <Grid item xs={12} lg={6}>
+                <Grid item xs={12} lg={6} mb={2}>
                   <div>
                     <b>공종별 주요작업 현황</b>
                   </div>
                   <div>토목: 반응기 기초 타설</div>
-                  <div>배관: 반응기 기초 타설</div>
+                  <div>배관: UG CW 배관 착수</div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
                 </Grid>
                 {/* 검측현황 */}
                 <Grid item xs={12} lg={6}>
                   <div>
                     <b>Field Inspection Notice</b>
                   </div>
-                  <div>토목: 반응기 기초 타설</div>
-                  <div>배관: 반응기 기초 타설</div>
+                  <div>토목: 파이프랙 기초 검측</div>
+                  <div>배관: UG배관 RT</div>
+                  <div></div>
                 </Grid>
               </Grid>
             </SoftTypography>
