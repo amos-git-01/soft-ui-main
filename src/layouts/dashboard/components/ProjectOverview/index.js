@@ -39,7 +39,7 @@ const IMAGES = [
 
 // 본문 시작
 
-function BuildByDevelopers() {
+function ProjectOverview() {
   return (
     <Card>
       <div></div>
@@ -129,4 +129,4 @@ function BuildByDevelopers() {
   );
 }
 
-export default BuildByDevelopers;
+export default ProjectOverview;

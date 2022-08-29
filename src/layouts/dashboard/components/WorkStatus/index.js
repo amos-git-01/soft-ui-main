@@ -25,7 +25,7 @@ import SoftTypography from "components/SoftTypography";
 // Images
 import plant1 from "assets/images/plant/plant1.jpg";
 
-function WorkWithTheRockets() {
+function WorkStatus() {
   return (
     <Card sx={{ height: "100%" }}>
       <SoftBox position="relative" height="100%" p={2}>
@@ -112,4 +112,4 @@ function WorkWithTheRockets() {
   );
 }
 
-export default WorkWithTheRockets;
+export default WorkStatus;

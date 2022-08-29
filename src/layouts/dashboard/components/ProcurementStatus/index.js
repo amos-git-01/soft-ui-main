@@ -26,12 +26,12 @@ import SoftBox from "components/SoftBox";
 import SoftTypography from "components/SoftTypography";
 
 // Soft UI Dashboard Materail-UI example components
-import Table from "examples/Tables/Table";
+import Table from "examples/Schedule";
 
 // Data
 import data from "layouts/dashboard/components/ProcurementStatus/data";
 
-function Projects() {
+function ProcurementStatus() {
   const { columns, rows } = data();
   const [menu, setMenu] = useState(null);
 
@@ -104,4 +104,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default ProcurementStatus;

@@ -33,14 +33,14 @@ import GradientLineChart from "examples/Charts/LineCharts/GradientLineChart";
 import typography from "assets/theme/base/typography";
 
 // Dashboard layout components
-import BuildByDevelopers from "layouts/dashboard/components/ProjectOverview";
-import WorkWithTheRockets from "layouts/dashboard/components/WorkStatus";
-import Projects from "layouts/dashboard/components/ProcurementStatus";
-import ProjectOverview from "layouts/dashboard/components/ProjectMilestone";
+import ProjectOverview from "layouts/dashboard/components/ProjectOverview";
+import WorkStatus from "layouts/dashboard/components/WorkStatus";
+import ProjectMilestone from "layouts/dashboard/components/ProjectMilestone";
 
 // Data
 import reportsBarChartData from "layouts/dashboard/data/reportsBarChartData";
 import gradientLineChartData from "layouts/dashboard/data/gradientLineChartData";
+import ProcurementStatus from "./components/ProcurementStatus";
 
 function Dashboard() {
   const { size } = typography;
@@ -53,7 +53,7 @@ function Dashboard() {
         {/* 첫번째 줄 */}
         <SoftBox mb={3}>
           <Grid container spacing={3}>
-            <Grid item xs={12} sm={6} xl={3}>
+            <Grid item xs={12} sm={4} xl={2}>
               <MiniStatisticsCard
                 title={{ text: "계획공정률" }}
                 count="15%"
@@ -61,7 +61,7 @@ function Dashboard() {
                 icon={{ color: "info", component: "timeline" }}
               />
             </Grid>
-            <Grid item xs={12} sm={6} xl={3}>
+            <Grid item xs={12} sm={4} xl={2}>
               <MiniStatisticsCard
                 title={{ text: "실행공정률" }}
                 count="16%"
@@ -69,15 +69,37 @@ function Dashboard() {
                 icon={{ color: "info", component: "insights" }}
               />
             </Grid>
-            <Grid item xs={12} sm={6} xl={3}>
+            <Grid item xs={12} sm={4} xl={2}>
               <MiniStatisticsCard
-                title={{ text: "무해재달성일수" }}
+                title={{ text: "무해재달성일" }}
                 count="120일"
                 percentage={{ color: "error", text: "" }}
                 icon={{ color: "info", component: "event" }}
               />
             </Grid>
-            <Grid item xs={12} sm={6} xl={3}>
+            <Grid item xs={12} sm={4} xl={2}>
+              <MiniStatisticsCard
+                title={{ text: "검측완료현황" }}
+                count="270"
+                percentage={{ color: "success", text: "+11" }}
+                icon={{
+                  color: "info",
+                  component: "task",
+                }}
+              />
+            </Grid>
+            <Grid item xs={12} sm={4} xl={2}>
+              <MiniStatisticsCard
+                title={{ text: "검측완료현황" }}
+                count="270"
+                percentage={{ color: "success", text: "+11" }}
+                icon={{
+                  color: "info",
+                  component: "task",
+                }}
+              />
+            </Grid>
+            <Grid item xs={12} sm={4} xl={2}>
               <MiniStatisticsCard
                 title={{ text: "검측완료현황" }}
                 count="270"
@@ -95,11 +117,11 @@ function Dashboard() {
           <Grid container spacing={3}>
             <Grid item xs={12} lg={7}>
               {/* 프로젝트 개요 자리 */}
-              <BuildByDevelopers />
+              <ProjectOverview />
             </Grid>
             <Grid item xs={12} lg={5}>
               {/* 더보기 자리 */}
-              <WorkWithTheRockets />
+              <WorkStatus />
             </Grid>
           </Grid>
         </SoftBox>
@@ -107,7 +129,7 @@ function Dashboard() {
         <SoftBox mb={3}>
           <Grid container spacing={3}>
             {/* 출역인원 관리 */}
-            <Grid item xs={12} lg={5}>
+            <Grid item xs={12} lg={4}>
               <ReportsBarChart
                 title="출역인원 관리"
                 description={
@@ -119,7 +141,7 @@ function Dashboard() {
                 items={items}
               />
             </Grid>
-            <Grid item xs={12} lg={7}>
+            <Grid item xs={12} lg={4}>
               {/* 공정률 추세선 확인 */}
               <GradientLineChart
                 title="Progress Overview"
@@ -140,15 +162,18 @@ function Dashboard() {
                 chart={gradientLineChartData}
               />
             </Grid>
+            <Grid item xs={12} md={6} lg={4}>
+              <ProjectMilestone />
+            </Grid>
           </Grid>
         </SoftBox>
         {/* 네번째 줄 */}
         <Grid container spacing={3}>
-          <Grid item xs={12} md={6} lg={8}>
-            <Projects />
+          <Grid item xs={12} md={6} lg={6}>
+            <ProcurementStatus />
           </Grid>
-          <Grid item xs={12} md={6} lg={4}>
-            <ProjectOverview />
+          <Grid item xs={12} md={6} lg={6}>
+            <ProcurementStatus />
           </Grid>
         </Grid>
       </SoftBox>

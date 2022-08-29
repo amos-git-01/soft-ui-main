@@ -24,7 +24,7 @@ import SoftTypography from "components/SoftTypography";
 // Soft UI Dashboard React examples
 import TimelineItem from "examples/Timeline/TimelineItem";
 
-function OrdersOverview() {
+function ProjectMilestone() {
   return (
     <Card className="h-100">
       <SoftBox pt={3} px={3}>
@@ -83,4 +83,4 @@ function OrdersOverview() {
   );
 }
 
-export default OrdersOverview;
+export default ProjectMilestone;

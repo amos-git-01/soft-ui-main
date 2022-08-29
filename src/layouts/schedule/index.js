@@ -24,15 +24,15 @@ import SoftTypography from "components/SoftTypography";
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
-import Table from "examples/Tables/Table";
+import Table from "examples/Schedule";
 
 // Data
-import authorsTableData from "layouts/tables/data/authorsTableData";
-import projectsTableData from "layouts/tables/data/projectsTableData";
+import epcTableData from "layouts/schedule/data/EPCTableData";
+import constTableData from "layouts/schedule/data/ConstTableData";
 
 function Tables() {
-  const { columns, rows } = authorsTableData;
-  const { columns: prCols, rows: prRows } = projectsTableData;
+  const { columns, rows } = epcTableData;
+  const { columns: prCols, rows: prRows } = constTableData;
 
   return (
     <DashboardLayout>
@@ -41,7 +41,9 @@ function Tables() {
         <SoftBox mb={3}>
           <Card>
             <SoftBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
-              <SoftTypography variant="h6">Authors table</SoftTypography>
+              <SoftTypography variant="h6">
+                <b>EPC 공정률 (주간)</b>
+              </SoftTypography>
             </SoftBox>
             <SoftBox
               sx={{
@@ -59,7 +61,9 @@ function Tables() {
         </SoftBox>
         <Card>
           <SoftBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
-            <SoftTypography variant="h6">Projects table</SoftTypography>
+            <SoftTypography variant="h6">
+              <b>공사 공정률 (주간) </b>
+            </SoftTypography>
           </SoftBox>
           <SoftBox
             sx={{
