@@ -38,8 +38,8 @@ Coded by www.creative-tim.com
 // Soft UI Dashboard React layouts
 import Dashboard from "layouts/dashboard";
 import Tables from "layouts/schedule";
-import Billing from "layouts/billing";
-import Profile from "layouts/profile";
+import Daily from "layouts/dailyreport";
+import Maps from "layouts/maps";
 import SignIn from "layouts/authentication/sign-in";
 import SignUp from "layouts/authentication/sign-up";
 
@@ -48,8 +48,8 @@ import Shop from "examples/Icons/Shop";
 import Office from "examples/Icons/Office";
 import Document from "examples/Icons/Document";
 import SpaceShip from "examples/Icons/SpaceShip";
-import CustomerSupport from "examples/Icons/CustomerSupport";
 import CreditCard from "examples/Icons/CreditCard";
+import Map from "examples/Icons/Cube";
 
 const routes = [
   {
@@ -73,10 +73,19 @@ const routes = [
   {
     type: "collapse",
     name: "Daily Report",
-    key: "dailyreport",
+    key: "dailyReport",
     route: "/dailyReport",
     icon: <CreditCard size="12px" />,
-    component: <Billing />,
+    component: <Daily />,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "Maps",
+    key: "maps",
+    route: "/maps",
+    icon: <Map size="12px" />,
+    component: <Maps />,
     noCollapse: true,
   },
   { type: "title", title: "Account Pages", key: "account-pages" },

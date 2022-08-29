@@ -158,7 +158,7 @@ function Dashboard() {
                     </SoftTypography>
                   </SoftBox>
                 }
-                height="20.25rem"
+                height="24.25rem"
                 chart={gradientLineChartData}
               />
             </Grid>
